@@ -10,13 +10,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <script>const products = document.querySelectorAll('.product');
+  <script>
+  
+  const productElement = document.querySelector('.product');
+  const priceElement = document.querySelector('.price');
 
-      products.forEach(product => {
-        const price = product.querySelector('.price').textContent;
-        product.setAttribute('data-price', price);
-      });
-      </script>
+  
+  const price = priceElement.textContent;
+
+  
+  productElement.setAttribute('data-price', price);
+</script>
+
     <div class="main">
       <div class="card product">
         <div class="card-image">
@@ -42,6 +47,18 @@
               <p class="subtitle is-6 price">$8,95</p>
             </div>
           </div>
+          <script>
+ 
+  const productElement = document.querySelector('.product');
+  const priceElement = document.querySelector('.price');
+
+  
+  const price = priceElement.textContent;
+
+  
+  productElement.setAttribute('data-price', price);
+</script>
+
 
           <div class="content">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
