@@ -12,14 +12,11 @@
   <body>
   <script>
   
-  const productElement = document.querySelector('.product');
-  const priceElement = document.querySelector('.price');
+  const priceSpan = document.querySelector('.price');
+const productDiv = document.querySelector('.product');
 
-  
-  const price = priceElement.textContent;
-
-  
-  productElement.setAttribute('data-price', price);
+productDiv.setAttribute('data-price', priceSpan.innerText);
+    
 </script>
 
     <div class="main">
@@ -47,19 +44,6 @@
               <p class="subtitle is-6 price">$8,95</p>
             </div>
           </div>
-          <script>
- 
-  const productElement = document.querySelector('.product');
-  const priceElement = document.querySelector('.price');
-
-  
-  const price = priceElement.textContent;
-
-  
-  productElement.setAttribute('data-price', price);
-</script>
-
-
           <div class="content">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
             nec iaculis mauris. <a>@bulmaio</a>. <a href="#">#css</a>
