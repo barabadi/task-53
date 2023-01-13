@@ -5,3 +5,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
 });
+const products = document.querySelectorAll(".product");
+
+products.forEach(product => {
+  const price = product.querySelector(".price").textContent;
+  product.setAttribute("data-price", price);
+});
